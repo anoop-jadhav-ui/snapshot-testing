@@ -1,9 +1,9 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 
-export default function App() {
-  const [todos, setTodos] = React.useState([]);
-  const [todoInput, setTodoInputValue] = React.useState('');
+const App = () => {
+  const [todos, setTodos] = useState<Array<string>>([]);
+  const [todoInput, setTodoInputValue] = useState('');
 
   const addTodoItem = () => {
     if (todoInput) {
@@ -37,3 +37,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

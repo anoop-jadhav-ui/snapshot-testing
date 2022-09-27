@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> should match the snapshot 1`] = `
+<div>
+  <div>
+    <h2>
+      Todo List
+    </h2>
+    <ul
+      class="todo-items"
+    />
+    <textarea />
+    <div
+      class="buttons-wrapper"
+    >
+      <button
+        type="reset"
+      >
+        Clear
+      </button>
+      <button>
+        Add
+      </button>
+    </div>
+  </div>
+</div>
+`;
