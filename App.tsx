@@ -6,8 +6,10 @@ export default function App() {
   const [todoInput, setTodoInputValue] = React.useState('');
 
   const addTodoItem = () => {
-    setTodos([...todos, todoInput]);
-    setTodoInputValue('');
+    if (todoInput) {
+      setTodos([...todos, todoInput]);
+      setTodoInputValue('');
+    }
   };
 
   const clearTodoList = () => {
