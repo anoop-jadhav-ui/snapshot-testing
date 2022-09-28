@@ -25,6 +25,7 @@ const App = () => {
         ))}
       </ul>
       <textarea
+        data-testid="input"
         value={todoInput}
         onChange={(e) => setTodoInputValue(e.target.value)}
       />

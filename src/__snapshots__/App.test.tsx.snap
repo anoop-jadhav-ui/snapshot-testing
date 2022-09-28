@@ -9,7 +9,41 @@ exports[`<App/> should match the snapshot 1`] = `
     <ul
       class="todo-items"
     />
-    <textarea />
+    <textarea
+      data-testid="input"
+    />
+    <div
+      class="buttons-wrapper"
+    >
+      <button
+        type="reset"
+      >
+        Clear
+      </button>
+      <button>
+        Add
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<App/> should match the snapshot when a todo item is added 1`] = `
+<div>
+  <div>
+    <h2>
+      Todo List
+    </h2>
+    <ul
+      class="todo-items"
+    >
+      <li>
+        Todo Item 1
+      </li>
+    </ul>
+    <textarea
+      data-testid="input"
+    />
     <div
       class="buttons-wrapper"
     >
